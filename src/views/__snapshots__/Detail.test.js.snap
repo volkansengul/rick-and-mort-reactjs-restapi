@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Character detail page renders without crashing 1`] = `
+<div>
+  <div
+    className="go-back-container"
+  >
+    <a
+      className="go-back"
+      href="/"
+      onClick={[Function]}
+    >
+      « Go Back
+    </a>
+  </div>
+  <div
+    className="clear"
+  />
+  <div
+    className="container"
+  >
+    <div
+      className="loading"
+    />
+    <div
+      className="episodes-container"
+    >
+      <div
+        className="episodes"
+      >
+        <h3
+          className="title"
+        >
+          Last 5 Episodes
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
+`;

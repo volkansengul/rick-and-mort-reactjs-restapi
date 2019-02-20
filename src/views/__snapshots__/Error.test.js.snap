@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error page renders without crashing 1`] = `
+<div
+  className="error"
+>
+  <h1>
+    Ups !
+  </h1>
+  <p>
+    Something went wrong! Please try again later.
+  </p>
+  <a
+    className="tryit-btn"
+    href="/"
+    onClick={[Function]}
+  >
+    Try it now :)
+  </a>
+</div>
+`;

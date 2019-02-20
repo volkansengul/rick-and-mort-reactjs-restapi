@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Character Episode List Test 1`] = `
+<div
+  className="episodes"
+>
+  <h3
+    className="title"
+  >
+    Last 5 Episodes
+  </h3>
+</div>
+`;

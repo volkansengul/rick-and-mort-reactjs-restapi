@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Character Card Detail Section Test 1`] = `
+<ul
+  className="character-card-detail"
+>
+  <li>
+    <span
+      className="caption"
+    >
+       STATUS:
+    </span>
+    <span>
+      Alive
+    </span>
+  </li>
+  <li>
+    <span
+      className="caption"
+    >
+       SPECIES:
+    </span>
+    <span>
+      Human
+    </span>
+  </li>
+  <li>
+    <span
+      className="caption"
+    >
+       GENDER:
+    </span>
+    <span>
+      Male
+    </span>
+  </li>
+  <li>
+    <span
+      className="caption"
+    >
+       ORIGIN:
+    </span>
+    <span>
+      Earth (C-137)
+    </span>
+  </li>
+  <li>
+    <span
+      className="caption"
+    >
+       LAST LOCATION:
+    </span>
+    <span>
+      Earth (Replacement Dimension)
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`Character Card List Test 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="loading"
+  />
+</div>
+`;
+
+exports[`Character Card Test 1`] = `
+<div
+  className="character-card"
+>
+  <a
+    href="/detail/1"
+    onClick={[Function]}
+  >
+    <img
+      src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+    />
+    <div>
+      Rick Sanchez
+    </div>
+  </a>
+</div>
+`;

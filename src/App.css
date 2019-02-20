@@ -1,0 +1,243 @@
+body {
+    background: #24272D;
+    font-family: 'Open Sans', serif;
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.clear {
+    clear: both;
+}
+
+.loading {
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    background: url('/assets/images/preloader.gif') top center no-repeat;
+    display: block;
+    margin: 0px auto;
+}
+
+h1 {
+    color: rgb(255, 152, 0);
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+    overflow: auto;
+}
+
+.character-card {
+    flex: 1 0 calc(25% - 30px);
+    max-width: calc(25% - 30px);
+    margin: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.character-card.detailed {
+    flex: 2 0 calc(35% - 30px);
+    max-width: calc(35% - 30px);
+}
+
+.character-card > a {
+    display: block;
+    position: relative;
+}
+
+.character-card > a > img {
+    width: 100%;
+    border-radius: 6px;
+    opacity: 0.7;
+}
+
+.character-card.detailed > a > img {
+    border-radius: 6px 6px 0px 0px;
+    opacity: 1;
+}
+
+.character-card:hover > a > img {
+    opacity: 1;
+}
+
+.character-card > a > div {
+    background: rgba(57, 57, 57, 0.9);
+    color: rgb(255, 152, 0);
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    padding: 15px;
+    border-radius: 0px 0px 6px 6px;
+    text-align: center;
+}
+
+.character-card.detailed > a > div {
+    border-radius: 0px;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.character-card-detail {
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(57, 57, 57, 1);
+    margin: -2px 0 0 0;
+    padding: 0px;
+    font-size: 0.8rem;
+    border-radius: 0px 0px 6px 6px;
+}
+
+.character-card-detail li {
+    margin: 0px;
+    padding: 12px 16px;
+    list-style: none;
+    border-bottom: rgba(255, 255, 255, 0.1) solid 1px;
+    display: flex;
+    flex-direction: row;
+}
+
+.character-card-detail li:last-child {
+    border: none;
+}
+
+.character-card-detail span {
+    color: rgb(255, 152, 0);
+    flex: 1;
+    text-align: right;
+}
+
+.character-card-detail span.caption {
+    color: #fff;
+    flex: 1;
+    text-align: left;
+}
+
+.episodes-container {
+    flex: 1;
+    margin-top: 15px;
+}
+
+.episodes {
+    flex: 1;
+    color: #fff;
+}
+
+.episodes h3.title {
+    color: rgb(255, 152, 0);
+    margin: 0px 0px 20px 0px;
+    font-weight: normal;
+}
+
+.episode-list {
+
+}
+
+.episode {
+    padding: 10px 0px;
+    border-bottom: rgba(255, 255, 255, 0.1) solid 1px;
+}
+
+.episode h3 {
+    float: left;
+    vertical-align: top;
+    margin: 0px;
+}
+
+.episode h3 i {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.episode-air-date {
+    float: right;
+    vertical-align: top;
+
+}
+
+.go-back-container {
+    max-width: 1200px;
+    margin: 20px auto 0px auto;
+}
+
+.go-back {
+    background: rgb(255, 152, 0);
+    color: #24272D;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    float: right;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.go-back:hover {
+    opacity: 1;
+}
+
+.error {
+    color: #fff;
+    text-align: center;
+}
+
+.tryit-btn {
+    background: rgb(255, 152, 0);
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin-top: 8px;
+    border-radius: 6px;
+}
+
+@media (max-width: 960px) {
+    .character-card,
+    .character-card.detailed {
+        flex: 1 0 33%;
+        max-width: calc(33% - 30px);
+    }
+
+    .character-card.detailed {
+        margin: 0px 20px 0px 0px;
+        max-width: 40%;
+    }
+
+    .go-back {
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .episode h3,
+    .episode-air-date {
+        float: none;
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .character-card,
+    .character-card.detailed {
+        flex: 1 0 100%;
+        max-width: calc(100% - 30px);
+    }
+
+    .character-card.detailed {
+        margin: 0px;
+        max-width: 100%;
+    }
+
+    .episodes h3.title {
+        text-align: center;
+    }
+
+    .go-back {
+        margin-right: 30px;
+    }
+}

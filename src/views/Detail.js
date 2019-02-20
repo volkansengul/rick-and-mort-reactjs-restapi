@@ -21,8 +21,7 @@ export default class Detail extends React.Component {
 
 
     render() {
-        const redirect = (this.characterId === undefined || !Number.isInteger(this.characterId)) ?
-            <Redirect to="/error" push/> : null;
+        const redirect = (this.characterId === undefined) ?<Redirect to="/error" push/> : null;
         return (
             <div>
                 {redirect}

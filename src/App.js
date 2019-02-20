@@ -15,8 +15,8 @@ class App extends Component {
                 <div>
                     <Route exact path="/" component={Home}/>
                     <Route path="/detail/:characterId" component={Detail}/>
+                    <Route path="/detail" component={Error}/>
                     <Route path="/error" component={Error}/>
-                    <Route component={Error}/>
                 </div>
             </Router>
         );

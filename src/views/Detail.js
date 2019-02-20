@@ -10,7 +10,7 @@ export default class Detail extends React.Component {
         this.state = {
             character: undefined
         };
-        this.characterId = props.match.params.characterId;
+        this.characterId = parseInt(props.match.params.characterId);
     }
 
     characterReady = (data) => {
@@ -21,7 +21,7 @@ export default class Detail extends React.Component {
 
 
     render() {
-        const redirect = (this.characterId === undefined) ?<Redirect to="/error" push/> : null;
+        const redirect = (this.characterId === undefined  || isNaN(this.characterId)) ?<Redirect to="/error" push/> : null;
         return (
             <div>
                 {redirect}

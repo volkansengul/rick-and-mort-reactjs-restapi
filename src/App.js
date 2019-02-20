@@ -14,8 +14,8 @@ class App extends Component {
             <Router>
                 <div>
                     <Route exact path="/" component={Home}/>
+                    <Route exact path="/detail" component={Error}/>
                     <Route path="/detail/:characterId" component={Detail}/>
-                    <Route path="/detail" component={Error}/>
                     <Route path="/error" component={Error}/>
                 </div>
             </Router>
